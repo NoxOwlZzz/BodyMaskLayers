@@ -71,7 +71,3 @@ The default builds both variants in Release. Use `/t:Package` to create the ZIPs
 The saved-data contract is described in [DATA_FORMAT.md](DATA_FORMAT.md).
 
 </details>
-
-## Credits
-
-NightOwlZzz / Owl. Uses BepInEx, HarmonyX, IllusionModdingAPI, ExtensibleSaveFormat, and Sideloader.
