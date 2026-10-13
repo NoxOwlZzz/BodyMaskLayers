@@ -54,20 +54,3 @@ Hidden garments contribute no mask. For gradients with the default `Auto` mode, 
 ## Configuration
 
 BepInEx creates the plugin's configuration on first launch. The default settings support categorical masks and compatible gradients. See [PluginConfig.cs](src/PluginConfig.cs) for the available settings.
-
-<details>
-<summary>For developers</summary>
-
-Use Visual Studio 2022 or compatible MSBuild tooling. KK targets .NET Framework 3.5; KKS targets .NET Framework 4.6. From a Developer Command Prompt, supply the matching game folders:
-
-```cmd
-MSBuild BodyMaskLayers.proj /t:Build ^
-  /p:KKGameRoot="<KK-game-root>" ^
-  /p:KKSGameRoot="<KKS-game-root>"
-```
-
-The default builds both variants in Release. Use `/t:Package` to create the ZIPs in `dist`. Game references are not redistributed.
-
-The saved-data contract is described in [DATA_FORMAT.md](DATA_FORMAT.md).
-
-</details>
